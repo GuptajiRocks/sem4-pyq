@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# Subject-wise files with Azure links
 subjects_data = {
     "Computer Networks": [
         {"name": "QP1", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CMCA508_Computer+Network-Layers+and+Protocols.pdf"},
@@ -13,10 +12,27 @@ subjects_data = {
         {"name": "QP6", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/EECE314L_Computer+Networks.pdf"}
     ],
     "Operating Systems": [
-        {"name": "OS_Midterm_2022.pdf", "url": "https://your-azure-link.com/OS_Midterm_2022.pdf"}
+        {"name": "QP1", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CBCA203_OPERATING+SYSTEM+CONCEPTS.pdf"},
+        {"name": "QP2", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CBSC-202+FUNDAMENTALS+OF+OPERATING+SYSTEM.pdf"},
+        {"name": "QP3", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CMCA505_Operating+System+Essentials.pdf"},
+        {"name": "QP4", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET209_OPERATING_SYSTEM (1).pdf"},
+        {"name": "QP5", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET209_Operating+Systems1.pdf"},
+        {"name": "QP6", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET209_OPERATING_SYSTEM (1).pdf"},
+        {"name": "QP7", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET209_OPERATING_SYSTEM (2).pdf"},
+        {"name": "QP8", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET209_Operating+Systems.pdf"}
     ],
     "Design and Analysis of Algorithms": [
-        {"name": "DAA_PYQ_2021.pdf", "url": "https://your-azure-link.com/DAA_PYQ_2021.pdf"}
+        {"name": "QP1", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CBSC203_Algorithm+Analysis+and+Design+.pdf"},
+        {"name": "QP2", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206 DESIGN AND ANALYSIS OF ALGORITHMS.pdf"},
+        {"name": "QP3", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_DESIGN_AND_ANALYSIS_OF_ALGORITHM (1).pdf"},
+        {"name": "QP4", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_DESIGN_AND_ANALYSIS_OF_ALGORITHM (2).pdf"},
+        {"name": "QP5", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_DESIGN_AND_ANALYSIS_OF_ALGORITHM.pdf"},
+        {"name": "QP6", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_Design+and+Analysis+of+Algorithm.pdf"},
+        {"name": "QP7", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_Design+and+Analysis+of+Algorithms (1).pdf"},
+        {"name": "QP8", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_Design+and+Analysis+of+Algorithms.pdf"},
+        {"name": "QP9", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_Design+and+Analysis+of+Algorithms+ (1).pdf"},
+        {"name": "QP10", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET206_Design+and+Analysis+of+Algorithms+.pdf"},
+        {"name": "QP11", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/G23.pdf"}
     ],
     "Data Mining and Predictive Modelling": [
         {"name": "DMPM_Final_2023.pdf", "url": "https://your-azure-link.com/DMPM_Final_2023.pdf"}
