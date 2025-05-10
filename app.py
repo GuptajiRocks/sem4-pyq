@@ -35,7 +35,11 @@ subjects_data = {
         {"name": "QP11", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/G23.pdf"}
     ],
     "Data Mining and Predictive Modelling": [
-        {"name": "DMPM_Final_2023.pdf", "url": "https://your-azure-link.com/DMPM_Final_2023.pdf"}
+        {"name": "QP1", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CMCA584_Data+Mining+and+Predictlve+Modelling.pdf"},
+        {"name": "QP2", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET228_Data+Mining+and+Predictive+Modelling.pdf"},
+        {"name": "QP3", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET228_Data+Mining+and+Predictive+Modelling+.pdf"},
+        {"name": "QP4", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/MMBA288L+DATA+MINING.pdf"},
+        {"name": "QP5", "url": "https://trialtwo.blob.core.windows.net/sem5-pyq/CSET584_Data+Mining+and+Modelling.pdf"}
     ]
 }
 
