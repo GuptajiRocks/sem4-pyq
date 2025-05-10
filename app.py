@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -23,17 +23,17 @@ subjects_data = {
     ]
 }
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
-    subjects = list(subjects_data.keys())
-    return render_template('index.html', subjects=subjects)
+    return render_template('index.html', subjects=list(subjects_data.keys()))
 
-@app.route('/subject/<subject>')
-def subject(subject):
-    files = subjects_data.get(subject)
+@app.route('/subject', methods=['POST'])
+def subject():
+    selected_subject = request.form.get('subject')
+    files = subjects_data.get(selected_subject)
     if not files:
         return "Subject not found", 404
-    return render_template('subject.html', subject=subject, files=files)
+    return render_template('subject.html', subject=selected_subject, files=files)
 
 if __name__ == '__main__':
     app.run(debug=True)
